@@ -80,18 +80,25 @@ video {
 }
 
 
-#about {
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.heading-border {
+    border-bottom: 10px solid rgba(247, 195, 49, 0.7);
+    display: block;
+    width: 80%;
+    margin-top: -14px;
+}
+
+#buro {
     padding-bottom: 0;
-
-    h1, h2, h3 {
-        font-weight: 300;
-    }
-
-    h2 {
-        font-size: 36px;
-        display: inline-block;
-        margin-bottom: 30px;
-    }
 
     .bg-image {
         background-image: url(../img/buro.jpg);
@@ -105,13 +112,6 @@ video {
         font-size: 16px;
         padding: 70px 30px 70px 30px;
         text-align: justify;
-    }
-
-    .heading-border {
-        border-bottom: 10px solid rgba(247, 195, 49, 0.7);
-        display: block;
-        width: 80%;
-        margin-top: -14px;
     }
 }
 

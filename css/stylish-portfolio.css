@@ -99,6 +99,7 @@ body {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   position: relative;
+  background-color: white;
 }
 
 .content-section-heading h2 {
@@ -116,7 +117,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .text-faded {
@@ -241,39 +242,39 @@ video {
   }
 }
 
-#about {
-  padding-bottom: 0;
-}
-
-#about h1, #about h2, #about h3 {
+h1, h2, h3 {
   font-weight: 300;
 }
 
-#about h2 {
+h2 {
   font-size: 36px;
   display: inline-block;
   margin-bottom: 30px;
 }
 
-#about .bg-image {
+.heading-border {
+  border-bottom: 10px solid rgba(247, 195, 49, 0.7);
+  display: block;
+  width: 80%;
+  margin-top: -14px;
+}
+
+#buro {
+  padding-bottom: 0;
+}
+
+#buro .bg-image {
   background-image: url(../img/buro.jpg);
   background-size: cover;
   background-position: center center;
 }
 
-#about .text-box {
+#buro .text-box {
   background: #fff;
   opacity: .8;
   font-size: 16px;
   padding: 70px 30px 70px 30px;
   text-align: justify;
-}
-
-#about .heading-border {
-  border-bottom: 10px solid rgba(247, 195, 49, 0.7);
-  display: block;
-  width: 80%;
-  margin-top: -14px;
 }
 
 /* Side Menu */
@@ -364,29 +365,47 @@ video {
   background: #343a40;
 }
 
-#social-icons {
+.social-icons {
   position: fixed;
-  right: 25px;
-  top: 50%;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
   z-index: 1;
 }
 
-#social-icons a {
-  color: white;
-  text-shadow: 0 0 4px black;
-  display: block;
-  font-size: 32px;
+.social-icons.instagram {
+  bottom: 125px;
+}
+
+.social-icons.linkedin {
+  bottom: 70px;
+}
+
+.social-icons:hover {
+  background: #343a40;
+}
+
+.social-icons:focus, .social-icons:hover {
+  color: #fff;
 }
 
 .service-icon {
   background-color: #fff;
   color: #1D809F;
-  height: 7rem;
-  width: 7rem;
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 5px solid black;
+  padding: 28px;
+  width: 200px;
+}
+
+.service-icon img {
+  width: 100%;
 }
 
 .callout {
