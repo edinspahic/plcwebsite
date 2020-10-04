@@ -1,3 +1,11 @@
+video {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
 .masthead {
     min-height: 30rem;
     position: relative;
@@ -6,10 +14,8 @@
     height: auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url("../img/pattern.png");    
+    background-repeat: repeat;    
     overflow: hidden;
     color: white;
     height: 100vh;
@@ -19,15 +25,7 @@
         margin: 0;
         padding: 0;
         font-weight: 300;
-    }
-
-    video {
-        position: fixed;
-        top: 0;
-        z-index: 0;
-        min-height: 100vh;
-        min-width: 100%;
-    }
+    }    
 
     .logo {
         img {
@@ -93,6 +91,7 @@
     .bg-image {
         background-image: url(../img/buro.jpg);
         background-size: cover;
+        background-position: center center;
     }
 
     .text-box {
