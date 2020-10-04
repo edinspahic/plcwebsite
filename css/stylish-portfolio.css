@@ -1,8 +1,85 @@
 /*!
  * Start Bootstrap - Stylish Portfolio v5.0.7 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
+
+@font-face {
+  font-family: 'Futura LT Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT Regular"), url("../fonts/FuturaLT.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT Book"), url("../fonts/FuturaLT-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT Oblique"), url("../fonts/FuturaLT-Oblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT BookOblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT BookOblique"), url("../fonts/FuturaLT-BookOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT Light"), url("../fonts/FuturaLT-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT CondensedLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT CondensedLight"), url("../fonts/FuturaLT-CondensedLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT LightOblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT LightOblique"), url("../fonts/FuturaLT-LightOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT CondensedLightObl';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT CondensedLightObl"), url("../fonts/FuturaLT-CondensedLightObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT Condensed"), url("../fonts/FuturaLT-Condensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT CondensedOblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT CondensedOblique"), url("../fonts/FuturaLT-CondensedOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura LT ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Futura LT ExtraBold"), url("../fonts/FuturaLT-ExtraBold.woff") format("woff");
+}
 
 body,
 html {
@@ -21,6 +98,7 @@ body {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  position: relative;
 }
 
 .content-section-heading h2 {
@@ -93,33 +171,105 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  color: white;
+  height: 100vh;
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
 .masthead video {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 0;
-  height: 100vh; 
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.masthead .logo img {
+  width: 250px;
+}
+
+.masthead .top-border {
+  width: 25%;
+  border-top: 3px solid;
+}
+
+.masthead .scroll-trigger {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.masthead .scroll-trigger p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.masthead .js-scroll-trigger {
+  transition: all 0.2s ease, visibility 0s;
+  border-radius: 0px;
+  background: rgba(247, 195, 49, 0.8);
+  width: 47px;
+  height: 51px;
+  display: inline-block;
+  color: black;
+  padding: 15px;
 }
 
 @media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
   .masthead h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
+    text-align: left;
+    width: 50%;
   }
+  .masthead .logo {
+    text-align: right;
+  }
+}
+
+#about {
+  padding-bottom: 0;
+}
+
+#about h1, #about h2, #about h3 {
+  font-weight: 300;
+}
+
+#about h2 {
+  font-size: 36px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#about .bg-image {
+  background-image: url(/img/buro.jpg);
+  background-size: cover;
+}
+
+#about .text-box {
+  background: #fff;
+  opacity: .8;
+  font-size: 16px;
+  padding: 70px 30px 70px 30px;
+  text-align: justify;
+}
+
+#about .heading-border {
+  border-bottom: 10px solid rgba(247, 195, 49, 0.7);
+  display: block;
+  width: 80%;
+  margin-top: -14px;
 }
 
 /* Side Menu */
@@ -206,6 +356,20 @@ h6 {
 
 .menu-toggle:hover {
   background: #343a40;
+}
+
+#social-icons {
+  position: fixed;
+  right: 25px;
+  top: 50%;
+  z-index: 1000;
+}
+
+#social-icons a {
+  color: white;
+  text-shadow: 0 0 4px black;
+  display: block;
+  font-size: 32px;
 }
 
 .service-icon {
