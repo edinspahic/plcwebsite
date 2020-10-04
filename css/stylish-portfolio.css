@@ -218,7 +218,7 @@ video {
   transition: all 0.2s ease, visibility 0s;
   border-radius: 0px;
   background: rgba(247, 195, 49, 0.8);
-  width: 47px;
+  width: 51px;
   height: 51px;
   display: inline-block;
   color: black;
@@ -368,7 +368,7 @@ video {
   position: fixed;
   right: 25px;
   top: 50%;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #social-icons a {
