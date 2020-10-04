@@ -490,8 +490,14 @@ h2 {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  background-color: #808f95;
+}
+
+footer.footer h2 {
+  text-transform: uppercase;
 }
 
 footer.footer .social-link {
