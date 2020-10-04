@@ -504,6 +504,10 @@ footer.footer h2 {
   text-transform: uppercase;
 }
 
+footer.footer .address, footer.footer .phone {
+  text-align: center;
+}
+
 footer.footer .social-link {
   display: block;
   height: 4rem;
@@ -518,6 +522,15 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  footer.footer .address {
+    text-align: right;
+  }
+  footer.footer .phone {
+    text-align: left;
+  }
 }
 
 a {

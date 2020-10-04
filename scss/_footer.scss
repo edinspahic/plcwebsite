@@ -7,7 +7,11 @@ footer.footer {
     h2 {
         text-transform: uppercase;
     }
-    
+
+    .address, .phone {
+        text-align: center;
+    }
+
     .social-link {
         display: block;
         height: 4rem;
@@ -21,6 +25,18 @@ footer.footer {
         &:hover {
             background-color: darken($primary, 10%);
             text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    footer.footer {
+        .address {
+            text-align: right;
+        }
+
+        .phone {
+            text-align: left;
         }
     }
 }
