@@ -18,7 +18,9 @@ video {
     background-repeat: repeat;
     overflow: hidden;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 
     h1 {
         font-size: 2.5rem;
