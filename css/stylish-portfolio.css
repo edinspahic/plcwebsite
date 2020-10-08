@@ -386,6 +386,22 @@ h2 {
   background-image: url(../img/innovation.gif);
 }
 
+@media screen and (min-width: 768px) {
+  #kompetenzen .accordion {
+    min-height: 450px;
+    position: relative;
+  }
+  #kompetenzen .accordion .col-md-4 {
+    position: initial;
+  }
+  #kompetenzen .accordion .description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;
+  }
+}
+
 .service-icon {
   background-color: #fff;
   color: black;
