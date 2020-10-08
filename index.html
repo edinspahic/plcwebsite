@@ -280,7 +280,9 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        $('.masthead').height(window.innerHeight);
+    $(document).ready(function () {
+        $('.masthead').outerHeight(window.innerHeight);
+    });        
     </script>
 
     <!-- Plugin JavaScript -->
