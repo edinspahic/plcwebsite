@@ -30,6 +30,7 @@
 
     .collapsed .service-icon + h4 {
         font-size: 1rem;
+        margin-bottom: 12px;
     }
 
     .service-icon + h4 + .underline {        
@@ -67,6 +68,10 @@
     
     .service-icon.innovation, .collapsed .service-icon.innovation:hover {
         background-image: url(../img/innovation.gif);
+    }
+    
+    .accordion .col-md-4 {
+        min-height: 330px;
     }
 
     @media screen and (min-width: 768px) {
