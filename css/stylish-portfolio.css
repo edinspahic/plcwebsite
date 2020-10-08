@@ -107,9 +107,6 @@ video {
   background-repeat: repeat;
   overflow: hidden;
   color: white;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 }
 
 .masthead h1 {
