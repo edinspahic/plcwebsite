@@ -344,6 +344,7 @@ h2 {
 
 #kompetenzen .service-icon + h4 {
   font-size: 1.2rem;
+  transition: all 0.2s;
 }
 
 #kompetenzen .collapsed .service-icon + h4 {
@@ -355,10 +356,11 @@ h2 {
   border-bottom: 1px solid;
   width: 100px;
   display: inline-block;
+  transition: all 0.2s;
 }
 
 #kompetenzen .collapsed .service-icon + h4 + .underline {
-  border: none;
+  width: 0;
 }
 
 #kompetenzen .collapsed .service-icon.modellierung {
