@@ -15,7 +15,8 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -90,9 +91,17 @@
                     <div class="col-lg-4 offset-lg-6 text-box">
                         <h3>Wer wir sind:</h3>
                         <p class="mb-5">
-                            Fokus unserer Tätigkeit basiert auf BIM-spezifischen Planungsdienstleistungen und der Digitalisierung im BIM-Standard, sowie der Entwicklung von parametrischen contents . Mit jahrelanger Erfahrung realisieren wir heute BIM Projekte auf internationaler Ebene, von Schweden, Deutschland bis nach Katar. Mit unserem Wissen unterstützen wir Planungsbüros und Generalunternehmen in der Umsetzung von BIM-Projekten. Plancraft verfügt über eine Netzwerk von mehr als 60 Architekten und Ingenieure.
+                            Fokus unserer Tätigkeit basiert auf BIM-spezifischen Planungsdienstleistungen und der
+                            Digitalisierung im BIM-Standard, sowie der Entwicklung von parametrischen contents . Mit
+                            jahrelanger Erfahrung realisieren wir heute BIM Projekte auf internationaler Ebene, von
+                            Schweden, Deutschland bis nach Katar. Mit unserem Wissen unterstützen wir Planungsbüros und
+                            Generalunternehmen in der Umsetzung von BIM-Projekten. Plancraft verfügt über eine Netzwerk
+                            von mehr als 60 Architekten und Ingenieure.​
                             <br>
-                            Die technische  Kompetenz unserer Architekten und Bauingeniere, zusammen mit unserer IT-Entwicklungsabteilung ermöglicht es uns Lösugen schneller und effizienter umzusetzten und ständig auf dem neusten Stand im digitalen Planungsprozess zu sein. Durch unser Engagement  wurden wir offizieller Entwicklungspartner von Autodesk.
+                            Die technische Kompetenz unserer Architekten und Bauingeniere, zusammen mit unserer
+                            IT-Entwicklungsabteilung ermöglicht es uns Lösugen schneller und effizienter umzusetzten und
+                            ständig auf dem neusten Stand im digitalen Planungsprozess zu sein. Durch unser Engagement
+                            wurden wir offizieller Entwicklungspartner von Autodesk.
                         </p>
                     </div>
                 </div>
@@ -107,43 +116,65 @@
                 <span class="heading-border"></span>
             </h2>
         </div>
-        <div class="container text-center">
+        <div class="container text-center accordion" id="accordionExample">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <img src="img/modellierung.png" />
-                    </span>
-                    <h4>Modellierung</h4>
-                    <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <span class="service-icon modellierung rounded-circle mx-auto mb-3"></span>
+                        <h4 id="headingOne">Modellierung</h4>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="text-justify description collapse" id="collapseOne" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <h4>Modellbasierte Planung</h4>
+                        <p>Wir erstellen BIM-Modelle auf Basis vorliegender Planungsunterlagen oder digitalisieren Ihre
+                            vorhandenen Pläne im BIM-Standard. Dabei entwickeln wir das Gebäude als intelligentes
+                            digitales
+                            3D-Modell mit allen relevanten Daten aus denen sich alle Planunterlagen und Dokumente
+                            erstellen
+                            lassen.
+                            <br>
+                            Wir unterstützen unsere Kunden auch während der Planungsphase mit der Erstellung von
+                            BIM-Modellen im
+                            notwendigen Detallierungsgrad nach Kundewunsch.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <img src="img/research.png" />
-                    </span>
-                    <h4>BIM-Management</h4>
-                    <p class="text-faded mb-0">
-                        Millions of users
-                        <i class="fas fa-heart"></i>
-                        Start Bootstrap!
-                    </p>
+                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <span class="service-icon research rounded-circle mx-auto mb-3"></span>
+                        <h4 id="headingTwo">BIM-Management</h4>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="text-justify description collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                        data-parent="#accordionExample">
+                        <h4>Entwicklung von Modellinhalten</h4>
+                        <p>Als offizieller Autodesk Entwicklungspartner, erstellen wir parametrische contents im Revit
+                            (Revit-Famillien) komplett neu oder passen bestehende an. Auch während des gesamten
+                            Projektverlaufs
+                            pflegen wir das Modell mit den genauen Daten und Modellinhalten, somit werden alle Vorteile
+                            von BIM
+                            als Mehrwert genutzt.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <img src="img/innovation.png" />
-                    </span>
-                    <h4>Innovation und Entwicklung</h4>
-                    <p class="text-faded mb-0">I mustache you a question...</p>
+                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                        aria-controls="collapseThree">
+                        <span class="service-icon innovation rounded-circle mx-auto mb-3"></span>
+                        <h4 id="headingThree">Innovation und Entwicklung</h4>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="text-justify description collapse" id="collapseThree" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <h4>Erstellug und Vektorisierug von Point-Cloud</h4>
+                        <p>Wir erstellen auch 3D-Modelle von Gebäuden die schon gebaut sind. Mit unserem Service
+                            unterstützen
+                            wir Sie bei der Digitalisierung und erstellen wir für Sie aus Ihren 3D Punktwolken ein
+                            3D-Gebäudemodell, sowie daraus anschließend 2D CAD-Daten als Grundriss, Schnitt und Ansicht.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="text-left">
-                <h4>Modellbasierte Planung</h4>
-                <p>Wir erstellen BIM-Modelle auf Basis vorliegender Planungsunterlagen oder digitalisieren Ihre vorhandenen Pläne im BIM-Standard. Dabei entwickeln  wir das  Gebäude als intelligentes digitales 3D-Modell mit allen relevanten Daten aus denen sich alle Planunterlagen und Dokumente erstellen lassen.</p>
-                <p>Wir unterstützen unsere Kunden auch während der Planungsphase mit der Erstellung von BIM-Modellen im notwendigen Detallierungsgrad nach Kundewunsch.</p>
-                <h4>Entwicklung von Modellinhalten</h4>
-                <p>Als offizieller Autodesk Entwicklungspartner, erstellen wir parametrische contents im Revit (Revit-Famillien) komplett neu oder passen bestehende an. Auch während des gesamten Projektverlaufs pflegen wir das Modell mit den genauen Daten und Modellinhalten, somit werden alle Vorteile von BIM als Mehrwert genutzt.</p>
-                <h4>Erstellug und Vektorisierug von Point-Cloud</h4>
-                <p>Wir erstellen auch 3D-Modelle von Gebäuden die schon gebaut sind. Mit unserem Service unterstützen wir Sie bei der Digitalisierung und erstellen wir für Sie aus Ihren 3D Punktwolken ein  3D-Gebäudemodell, sowie daraus anschließend 2D CAD-Daten als Grundriss, Schnitt und Ansicht.</p>
             </div>
         </div>
     </section>

@@ -1,18 +1,91 @@
 #kompetenzen {
     padding-bottom: 1rem;
+
+    a, a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;        
+    }
+
+    .description {
+        margin-top: 60px;
+    }
+
+    .description h4 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    p {
+        font-weight: 300;
+    }    
+
+    .service-icon + h4 {
+        font-size: 1.2rem;        
+    }
+
+    .collapsed .service-icon + h4 {
+        font-size: 1rem;
+    }
+
+    .service-icon + h4 + .underline {        
+        border-bottom: 1px solid;
+        width: 100px;
+        display: inline-block;
+    }
+
+    .collapsed .service-icon  + h4 + .underline {
+        border: none;
+    }
+    
+    
+    .collapsed .service-icon.modellierung {
+        background-image: url(../img/modellierung.png);
+    }
+    
+    .service-icon.modellierung, .collapsed .service-icon.modellierung:hover {
+        background-image: url(../img/modellierung.gif);
+    }
+    
+    
+    .collapsed .service-icon.research {
+        background-image: url(../img/management.png);
+    }
+    
+    .service-icon.research, .collapsed .service-icon.research:hover {
+        background-image: url(../img/management.gif);
+    }
+    
+    
+    .collapsed .service-icon.innovation {
+        background-image: url(../img/innovation.png);
+    }
+    
+    .service-icon.innovation, .collapsed .service-icon.innovation:hover {
+        background-image: url(../img/innovation.gif);
+    }
 }
 
 .service-icon {
-    background-color: $white;
-    color: $primary;
+    background-color: #fff;
+    color: black;
     display: block;
     line-height: 7.5rem;
     font-size: 2.25rem;
-    border: 5px solid black;
+    border: 5px solid #000;
     padding: 28px;
     width: 200px;
+    background-size: 130px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     img {
         width: 100%;
     }
 }
+
