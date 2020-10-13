@@ -112,6 +112,7 @@ video {
   background-repeat: repeat;
   overflow: hidden;
   color: white;
+  height: 100vh;
 }
 
 .masthead h1 {
@@ -550,6 +551,7 @@ h2 {
 .carousel-inner {
   width: 80%;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .carousel-control-next, .carousel-control-prev {
