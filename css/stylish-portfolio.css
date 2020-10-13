@@ -96,6 +96,11 @@ video {
   min-width: 100%;
 }
 
+.visible {
+  display: initial !important;
+  transition: ease 3s;
+}
+
 .masthead {
   position: relative;
   display: table;
@@ -114,6 +119,11 @@ video {
   margin: 0;
   padding: 0;
   font-weight: 300;
+  -webkit-animation: 5s fadeIn;
+  animation: 5s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 .masthead .logo img {
@@ -161,6 +171,24 @@ video {
   }
   .masthead .logo {
     text-align: right;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
   }
 }
 
@@ -393,7 +421,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   #kompetenzen .accordion {
-    min-height: 450px;
+    min-height: 830px;
     position: relative;
   }
   #kompetenzen .accordion .col-md-4 {
@@ -450,19 +478,11 @@ h2 {
 }
 
 .portfolio-item .caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
   z-index: 1;
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
+  color: #000;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -480,31 +500,65 @@ h2 {
     max-width: none;
     margin: 0;
   }
-  .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
   }
-  .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
+}
+
+.portfolio-item:hover {
+  text-decoration: none !important;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-header .close {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+}
+
+.modal-open .modal {
+  padding-right: 0px !important;
+}
+
+.modal-dialog {
+  margin: 0;
+  max-width: none;
+  background-color: #0d2130 !important;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.modal-backdrop {
+  background-color: #0d2130 !important;
+}
+
+.modal-content {
+  background-color: transparent;
+  background-clip: initial;
+  border: none;
+  border-radius: 0;
+  color: white;
+}
+
+.carousel-inner {
+  width: 80%;
+  margin: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+  font-size: 1.5rem;
+}
+
+.carousel-indicators {
+  bottom: -50px;
 }
 
 footer.footer {

@@ -6,6 +6,13 @@ video {
     min-width: 100%;
 }
 
+.visible {
+  display: initial !important;
+  transition: ease 3s;
+}
+
+
+
 .masthead {
     position: relative;
     display: table;
@@ -17,13 +24,17 @@ video {
     background-repeat: repeat;
     overflow: hidden;
     color: white;
-
+    
     h1 {
         font-size: 2.5rem;
         margin: 0;
         padding: 0;
-        font-weight: 300;
-    }
+        font-weight: 300;    
+        
+        animation: 5s fadeIn;
+        animation-fill-mode: forwards;      
+        visibility: hidden;  
+    }        
 
     .logo {
         img {
@@ -75,6 +86,15 @@ video {
             text-align: right;
         }
     }
+}
+
+@keyframes fadeIn {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 
