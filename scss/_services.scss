@@ -35,7 +35,7 @@
     }
 
     .service-icon + h4 + .underline {        
-        border-bottom: 1px solid;
+        border-bottom: 10px solid #f9d56e;
         width: 100px;
         display: inline-block;
         transition: all 0.2s;
@@ -73,7 +73,7 @@
     }
     
     .accordion .col-md-4 {
-        min-height: 330px;
+        min-height: 300px;
     }
 
     @media screen and (min-width: 768px) {
