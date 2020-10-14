@@ -124,16 +124,26 @@ video {
   animation: 5s fadeIn;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  visibility: hidden;
+  opacity: 0;
 }
 
 .masthead .logo img {
   width: 250px;
+  -webkit-animation: 2.5s fadeIn;
+  animation: 2.5s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .masthead .top-border {
   width: 25%;
   border-top: 3px solid;
+  -webkit-animation: 5s fadeIn;
+  animation: 5s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .masthead .scroll-trigger {
@@ -177,19 +187,19 @@ video {
 
 @-webkit-keyframes fadeIn {
   50% {
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   50% {
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -484,16 +494,18 @@ h2 {
 
 .portfolio-item .caption .caption-content {
   color: #000;
+  padding: 15px 0;
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @media (min-width: 992px) {
@@ -561,6 +573,23 @@ h2 {
 
 .carousel-indicators {
   bottom: -50px;
+}
+
+.modal-body .description h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.modal-body .description p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.modal-body .description hr {
+  margin: 1rem 0;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  width: 50px;
 }
 
 footer.footer {

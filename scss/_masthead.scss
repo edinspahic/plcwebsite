@@ -33,18 +33,26 @@ video {
         
         animation: 5s fadeIn;
         animation-fill-mode: forwards;      
-        visibility: hidden;  
+        opacity: 0;  
     }        
 
     .logo {
         img {
             width: 250px;
+
+            animation: 2.5s fadeIn;
+            animation-fill-mode: forwards;      
+            opacity: 0;  
         }
     }
 
     .top-border {
         width: 25%;
         border-top: 3px solid;
+
+        animation: 5s fadeIn;
+        animation-fill-mode: forwards;      
+        opacity: 0;  
     }
 
     .scroll-trigger {
@@ -90,10 +98,10 @@ video {
 
 @keyframes fadeIn {
   50% {
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
