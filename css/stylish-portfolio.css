@@ -117,7 +117,6 @@ video {
 
 .masthead h1 {
   font-size: 2.5rem;
-  margin: 0;
   padding: 0;
   font-weight: 300;
   -webkit-animation: 5s fadeIn;
@@ -131,16 +130,6 @@ video {
   width: 250px;
   -webkit-animation: 2.5s fadeIn;
   animation: 2.5s fadeIn;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.masthead .top-border {
-  width: 25%;
-  border-top: 3px solid;
-  -webkit-animation: 5s fadeIn;
-  animation: 5s fadeIn;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -182,6 +171,15 @@ video {
   }
   .masthead .logo {
     text-align: right;
+  }
+  .masthead .top-border {
+    width: 25%;
+    border-top: 3px solid;
+    -webkit-animation: 5s fadeIn;
+    animation: 5s fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 }
 
