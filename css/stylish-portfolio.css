@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Brutal Type';
 }
 
 .btn-xl {
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .text-faded {
@@ -233,7 +233,6 @@ h2 {
   opacity: .8;
   font-size: 16px;
   padding: 70px 30px 70px 30px;
-  text-align: justify;
 }
 
 /* Side Menu */
@@ -363,7 +362,7 @@ h2 {
 
 #kompetenzen h4 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 #kompetenzen .description {
@@ -430,7 +429,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   #kompetenzen .accordion {
-    min-height: 830px;
+    min-height: 900px;
     position: relative;
   }
   #kompetenzen .accordion .col-md-4 {
@@ -501,7 +500,7 @@ h2 {
 
 .portfolio-item .caption .caption-content h2 {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 900;
   margin-bottom: 0;
 }
 
@@ -581,7 +580,7 @@ h2 {
 .modal-body .description h4 {
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .modal-body .description p {
