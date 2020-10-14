@@ -429,23 +429,20 @@ h2 {
   background-image: url(../img/innovation.gif);
 }
 
-#kompetenzen .accordion .col-md-4 {
-  min-height: 300px;
+#kompetenzen .accordion {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  #kompetenzen .accordion {
-    min-height: 930px;
-    position: relative;
-  }
-  #kompetenzen .accordion .col-md-4 {
-    position: initial;
-  }
   #kompetenzen .accordion .description {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 250px;
+    width: 300%;
+  }
+  #kompetenzen #collapseTwo {
+    margin-left: -100%;
+  }
+  #kompetenzen #collapseThree {
+    margin-left: -200%;
   }
 }
 
@@ -543,6 +540,7 @@ h2 {
 
 .modal-open .modal {
   padding-right: 0px !important;
+  background-color: #0d2130 !important;
 }
 
 .modal-dialog {

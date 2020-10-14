@@ -69,27 +69,24 @@
     
     .service-icon.innovation, .collapsed .service-icon.innovation:hover {
         background-image: url(../img/innovation.gif);
+    }    
+
+    .accordion {
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
-    
-    .accordion .col-md-4 {
-        min-height: 300px;
-    }
 
-    @media screen and (min-width: 768px) {
-        .accordion {
-            min-height: 930px;
-            position: relative;
-        }
-
-        .accordion .col-md-4 {
-            position: initial;
-        }
-
+    @media screen and (min-width: 768px) {        
         .accordion .description {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 250px;
+            width: 300%;
+        }
+
+        #collapseTwo {
+            margin-left: -100%;            
+        }
+
+        #collapseThree { 
+            margin-left: -200%;            
         }
     }
 }
