@@ -378,7 +378,6 @@ h2 {
 
 #kompetenzen .description h4 {
   font-size: 1rem;
-  margin: 0;
 }
 
 #kompetenzen p {
@@ -436,7 +435,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   #kompetenzen .accordion {
-    min-height: 900px;
+    min-height: 930px;
     position: relative;
   }
   #kompetenzen .accordion .col-md-4 {
