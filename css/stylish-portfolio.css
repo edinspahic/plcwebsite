@@ -4,7 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
-/*@import "fonts";*/
+@font-face {
+  font-family: "Brutal Type";
+  src: url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.eot");
+  /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.woff") format("woff"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.svg#Brutal Type") format("svg");
+  /* iOS 4.1- */
+}
+
 body,
 html {
   width: 100%;
