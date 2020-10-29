@@ -39,6 +39,16 @@
       $('.scroll-to-top').fadeOut();
     }
   });
+  
+  // Navbar appear
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > window.innerHeight) {
+      $('.navbar').fadeIn();
+    } else {
+      $('.navbar').fadeOut();
+    }
+  });
 
 })(jQuery); // End of use strict
 
