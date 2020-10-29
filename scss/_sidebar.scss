@@ -87,7 +87,7 @@
     color: $white;
     background: fade-out($gray-800, .5);
     line-height: 50px;
-    z-index: 999;
+    z-index: 1100;
 
     &:focus,
     &:hover {

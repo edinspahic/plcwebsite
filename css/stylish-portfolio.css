@@ -319,7 +319,7 @@ h2 {
   color: #fff;
   background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
-  z-index: 999;
+  z-index: 1100;
 }
 
 .menu-toggle:focus, .menu-toggle:hover {
