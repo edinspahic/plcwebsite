@@ -43,7 +43,7 @@
   // Navbar appear
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > window.innerHeight) {
+    if (scrollDistance > window.innerHeight - 50) {
       $('.navbar').fadeIn();
     } else {
       $('.navbar').fadeOut();
