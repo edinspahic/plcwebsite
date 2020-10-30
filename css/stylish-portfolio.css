@@ -635,16 +635,15 @@ h2 {
   display: block;
   border-radius: 50%;
   position: absolute;
-  right: 20px;
-  bottom: -30px;
   text-align: center;
-  padding-top: 36px;
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
 }
 
 .webcam span {
+  display: table-cell;
+  height: 100px;
+  vertical-align: middle;
   transform: rotate(12deg);
-  display: block;
   text-decoration: underline;
   color: #343436;
 }

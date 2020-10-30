@@ -132,18 +132,17 @@
     background-color: #E8E100;
     display: block;
     border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    bottom: -30px;
+    position: absolute;    
     text-align: center;
-    padding-top: 36px;
     box-shadow: 0 0 10px rgba(10,10,10,0.2);
     
-    span {
+    span {                      
+        display: table-cell;
+        height: 100px;
+        vertical-align: middle;
         -webkit-transform: rotate(12deg);
         -ms-transform: rotate(12deg);
         transform: rotate(12deg);
-        display: block;
         text-decoration: underline;
         color: #343436;
     }
