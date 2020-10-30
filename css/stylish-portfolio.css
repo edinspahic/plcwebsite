@@ -242,6 +242,21 @@ h2 {
   padding: 70px 30px 70px 30px;
 }
 
+#map {
+  padding: 3rem 0;
+}
+
+#map .section-text {
+  margin: 7rem 0;
+}
+
+#map .container {
+  background-image: url(../img/map.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -680,7 +695,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-dark {
-  background-color: #343a40ee !important;
+  background-color: #808f95 !important;
 }
 
 .text-primary {
@@ -689,4 +704,9 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.collapsing {
+  transition: none;
+  height: initial;
 }

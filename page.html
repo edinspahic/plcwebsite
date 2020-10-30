@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onresize="resizeMasthead()">
 
     <nav class="navbar fixed-top navbar-light bg-dark" style="display: none;">
       <span class="navbar-brand">
@@ -187,6 +187,18 @@
                 </div>
             </div>
         </div>
+    </section>
+    
+    
+     <section class="content-section bg-dark" id="map">
+      <div class="container">   
+        <div class="row justify-content-end">
+          <div class="col-sm-6 text-right section-text">
+            <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+            <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at!</p>                    
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Modal -->
@@ -455,6 +467,17 @@
             </div>
         </div>
     </section>
+    
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+            <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at!</p>            
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer text-center" id="kontakt">
         <div class="container text-white">
@@ -494,7 +517,11 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
-        $('.masthead').outerHeight(window.innerHeight);                     
+        function resizeMasthead() {
+            $('.masthead').outerHeight(window.innerHeight);
+        }
+        
+        resizeMasthead();
     </script>
 
     <!-- Plugin JavaScript -->

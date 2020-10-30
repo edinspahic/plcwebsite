@@ -45,7 +45,7 @@ a {
 }
 
 .bg-dark {
-  background-color: #343a40ee !important;
+  background-color: #808f95 !important;
 }
 
 .text-primary {
@@ -55,3 +55,11 @@ a {
 .text-secondary {
   color: $secondary !important;
 }
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    height: initial;
+}
+
+

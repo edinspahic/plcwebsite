@@ -139,3 +139,17 @@ h2 {
     }
 }
 
+#map {
+    padding: 3rem 0;
+}
+
+#map .section-text {
+    margin: 7rem 0;
+}
+
+#map .container {
+    background-image: url(../img/map.png);
+    background-size: contain;
+    background-position: left;    
+    background-repeat: no-repeat;
+}
