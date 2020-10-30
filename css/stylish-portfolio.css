@@ -252,11 +252,25 @@ h2 {
   margin: 7rem 0;
 }
 
+@media (max-width: 768px) {
+  #map .section-text {
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+  }
+}
+
 #map .container {
   background-image: url(../img/map.png);
-  background-size: contain;
+  background-size: 70%;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #map .container {
+    background-size: 100%;
+    background-position-y: 2rem;
+  }
 }
 
 #map .container img {

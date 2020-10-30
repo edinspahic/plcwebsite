@@ -146,14 +146,24 @@ h2 {
 }
 
 #map .section-text {
-    margin: 7rem 0;
+    margin: 7rem 0;        
+    
+    @media (max-width: 768px) {
+        margin-top: 15rem;
+        margin-bottom: 3rem;
+    }
 }
 
 #map .container {
     background-image: url(../img/map.png);
-    background-size: contain;
+    background-size: 70%;
     background-position: left;    
     background-repeat: no-repeat;
+    
+    @media (max-width: 768px) {
+        background-size: 100%;
+        background-position-y: 2rem;
+    }
     
     img {
         height: 40px;
