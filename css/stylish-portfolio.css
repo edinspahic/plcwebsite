@@ -628,6 +628,27 @@ h2 {
   width: 50px;
 }
 
+.webcam {
+  height: 100px;
+  width: 100px;
+  background-color: #E8E100;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+  text-align: center;
+  padding-top: 36px;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
+}
+
+.webcam span {
+  transform: rotate(12deg);
+  display: block;
+  text-decoration: underline;
+  color: #343436;
+}
+
 footer.footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
