@@ -45,8 +45,10 @@
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > window.innerHeight - 100) {
       $('.navbar').fadeIn();
+      $('.menu-toggle').addClass('text-dark');
     } else {
       $('.navbar').fadeOut();
+      $('.menu-toggle').removeClass('text-dark');
     }
   });
 
