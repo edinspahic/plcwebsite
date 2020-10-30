@@ -259,6 +259,12 @@ h2 {
   background-repeat: no-repeat;
 }
 
+#map .container img {
+  height: 40px;
+  display: inline-block;
+  margin: 0 8px;
+}
+
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;

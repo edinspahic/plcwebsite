@@ -154,4 +154,10 @@ h2 {
     background-size: contain;
     background-position: left;    
     background-repeat: no-repeat;
+    
+    img {
+        height: 40px;
+        display: inline-block;
+        margin: 0 8px;
+    }
 }
