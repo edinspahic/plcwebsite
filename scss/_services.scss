@@ -43,32 +43,18 @@
     .collapsed .service-icon  + h4 + .underline {
         width: 0;
     }
+            
     
-    
-    .collapsed .service-icon.modellierung {
+    .service-icon.modellierung {
         background-image: url(../img/modellierung.png);
-    }
+    }       
     
-    .service-icon.modellierung, .collapsed .service-icon.modellierung:hover {
-        background-image: url(../img/modellierung.gif);
-    }
-    
-    
-    .collapsed .service-icon.research {
+    .service-icon.research {
         background-image: url(../img/management.png);
-    }
+    }           
     
-    .service-icon.research, .collapsed .service-icon.research:hover {
-        background-image: url(../img/management.gif);
-    }
-    
-    
-    .collapsed .service-icon.innovation {
+    .service-icon.innovation {
         background-image: url(../img/innovation.png);
-    }
-    
-    .service-icon.innovation, .collapsed .service-icon.innovation:hover {
-        background-image: url(../img/innovation.gif);
     }    
 
     .accordion {
@@ -91,6 +77,38 @@
     }
 }
 
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform:scale(1)
+ }
+ 50% {
+  -webkit-transform:scale(0.85);
+  opacity:1
+ }
+ 100% {
+  -webkit-transform:scale(1)
+ }
+}
+@keyframes pulse {
+ 0% {
+  -webkit-transform:scale(1);
+  -ms-transform:scale(1);
+  transform:scale(1)
+ }
+ 50% {
+  -webkit-transform:scale(0.85);
+  -ms-transform:scale(0.85);
+  transform:scale(0.85);
+  opacity:1
+ }
+ 100% {
+  -webkit-transform:scale(1);
+  -ms-transform:scale(1);
+  transform:scale(1)
+ }
+}
+
+
 .service-icon {
     background-color: #fff;
     color: black;
@@ -104,9 +122,23 @@
     height: 200px;
     background-repeat: no-repeat;
     background-position: center center;
+    
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    -o-transition: transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
 
     img {
         width: 100%;
+    }                        
+}
+
+
+.collapsed .service-icon {
+    &:hover {
+        -webkit-animation: pulse 0.3s ease-in-out;
+        animation: pulse 0.3s ease-in-out;
     }
 }
 
