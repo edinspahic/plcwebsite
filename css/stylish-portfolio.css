@@ -115,6 +115,7 @@ video {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background-color: #222;
   /*
     background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url("../img/pattern.png");
     background-repeat: repeat;
