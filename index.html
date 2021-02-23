@@ -29,6 +29,42 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <meta property="og:site_name" content="plancraft d.o.o.">    
+    
+    <script>
+       (function() {
+        document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+  //  NEEDED to push the wf-loading class to your head
+  document.getElementsByTagName("html")[0].setAttribute("className","wf-loading")
+        // for IE…
+ 
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+             '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'false';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+       })();
+     </script>
+    <style type="text/css">
+        
+       .wf-loading p {
+         visibility:hidden;
+       }
+       .wf-loading h1 {
+         visibility:hidden;
+       }
+       .wf-inactive p, .wf-inactive h1{ visibility:visible;}
+       .wf-active p {
+         visibility:visible;
+       }
+ 
+       .wf-active h1 {         
+        visibility:visible;
+       }
+     </style>
+
+
 </head>
 
 <body id="page-top">
