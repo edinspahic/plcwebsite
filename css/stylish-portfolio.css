@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: "Brutal Type";
-  src: url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.eot");
+  src: url("../fonts/Brutal Type.eot");
   /* IE9*/
-  src: url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.woff") format("woff"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/1ae01d7899d3988cd6f5edd794a89d27.svg#Brutal Type") format("svg");
+  src: url("../fonts/Brutal Type.eot?#iefix") format("embedded-opentype"), url("../fonts/Brutal Type.woff2") format("woff2"), url("../fonts/Brutal Type.woff") format("woff"), url("../fonts/Brutal Type.ttf") format("truetype"), url("../fonts/Brutal Type.svg#Brutal Type") format("svg");
   /* iOS 4.1- */
 }
 
