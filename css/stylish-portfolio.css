@@ -405,6 +405,10 @@ h2 {
   color: inherit;
 }
 
+.language-menu a:hover {
+  color: inherit;
+}
+
 .language-menu a.current {
   color: rgba(247, 195, 49, 0.8);
 }
