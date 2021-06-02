@@ -46,9 +46,11 @@
     if (scrollDistance > window.innerHeight - 100) {
       $('.navbar').fadeIn();
       $('.menu-toggle').addClass('text-dark');
+      $('.language-menu').addClass('text-dark');
     } else {
       $('.navbar').fadeOut();
       $('.menu-toggle').removeClass('text-dark');
+      $('.language-menu').removeClass('text-dark');
     }
   });
 

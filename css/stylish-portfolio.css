@@ -391,6 +391,24 @@ h2 {
   color: #fff;
 }
 
+.language-menu {
+  position: fixed;
+  right: 60px;
+  top: 17px;
+  color: white;
+  z-index: 2000;
+  list-style: none;
+  color: white;
+}
+
+.language-menu a {
+  color: inherit;
+}
+
+.language-menu a.current {
+  color: rgba(247, 195, 49, 0.8);
+}
+
 #kompetenzen {
   padding-bottom: 1rem;
 }
