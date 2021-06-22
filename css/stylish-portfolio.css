@@ -245,6 +245,13 @@ h2 {
   padding: 70px 30px 70px 30px;
 }
 
+.play-button {
+  margin: auto;
+  display: block;
+  width: 220px;
+  padding: 50% 0;
+}
+
 #map {
   padding: 3rem 0;
 }
@@ -406,6 +413,10 @@ h2 {
 }
 
 .language-menu a:hover {
+  color: inherit;
+}
+
+.language-menu a:active {
   color: inherit;
 }
 
