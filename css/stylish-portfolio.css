@@ -248,8 +248,23 @@ h2 {
 .play-button {
   margin: auto;
   display: block;
-  width: 220px;
-  padding: 50% 0;
+  width: 150px;
+  padding: 10% 0;
+  opacity: 0.8;
+}
+
+.play-button img {
+  width: 150px;
+}
+
+.play-button:hover {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .play-button {
+    padding: 75% 0;
+  }
 }
 
 #map {
