@@ -248,13 +248,13 @@ h2 {
 .play-button {
   margin: auto;
   display: block;
-  width: 150px;
+  width: 220px;
   padding: 10% 0;
   opacity: 0.8;
 }
 
 .play-button img {
-  width: 150px;
+  width: 220px;
 }
 
 .play-button:hover {
@@ -263,7 +263,7 @@ h2 {
 
 @media (min-width: 992px) {
   .play-button {
-    padding: 75% 0;
+    padding: 50% 0;
   }
 }
 
