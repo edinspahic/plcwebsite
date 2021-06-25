@@ -823,3 +823,7 @@ a:hover, a:focus, a:active {
   transition: none;
   height: initial;
 }
+
+.modal {
+  z-index: 2000;
+}
