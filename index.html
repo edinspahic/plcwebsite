@@ -221,17 +221,7 @@
             <style>
                 #referenzen .slide {
                     padding: 0 10px;
-                }
-                
-                .slick-prev {
-                    left: 24px;
-                    z-index: 1000;
-                }            
-                
-                .slick-next {
-                    right: 25px;
-                    z-index: 1000;
-                }
+                }                                
             </style>
         </div>
         <div class="references slider">
@@ -422,6 +412,30 @@
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <style>
+        .slick-next, .slick-prev {
+            transform: initial;
+            -webkit-transform: initial;
+            top: 0;
+            bottom: 0;
+            height: initial;
+            width: 50px;
+        }
+        
+        .slick-prev {
+            left: 0;
+            z-index: 1000;
+        }            
+        
+        .slick-next {
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .img-fluid {
+            width: 100%;
+        }
+    </style>
     <script>
         $(document).ready(function(){
           $('.customer-logos.slider').slick({
@@ -437,9 +451,9 @@
               infinite: true,
               slidesToShow: 4,
               autoplay: false,
-              slidesToScroll: 1,
+              slidesToScroll: 4,
               centerMode: true,
-              arrows: false
+              arrows: true
           });
         });
     </script>    
