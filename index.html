@@ -128,6 +128,11 @@
               .customer-logos .slide {
                   text-align: center;
               }
+              
+              .customer-logos .slide img {
+                  max-width: 100%;
+                  margin: auto;
+              }
           </style>
                 
            <div class="customer-logos slider">
@@ -229,7 +234,7 @@
                 }
             </style>
         </div>
-        <div class="slider">
+        <div class="references slider">
             <div class="slide">
                 <a class="portfolio-item" href="references/project-1.html">
                     <img class="img-fluid" src="img/references/01.jpg" alt="">
@@ -419,10 +424,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script>
         $(document).ready(function(){
-          $('.slider').slick({
+          $('.customer-logos.slider').slick({
+              infinite: true,
+              slidesToShow: 5,
+              autoplay: false,
+              slidesToScroll: 1,
+              centerMode: true,
+              arrows: false
+          });
+          
+          $('.references.slider').slick({
               infinite: true,
               slidesToShow: 4,
-              autoplay: true,
+              autoplay: false,
               slidesToScroll: 1,
               centerMode: true,
               arrows: false
