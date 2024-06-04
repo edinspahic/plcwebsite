@@ -44,13 +44,13 @@
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > window.innerHeight - 100) {
-      $('.navbar').fadeIn();
-      $('.menu-toggle').addClass('text-dark');
-      $('.language-menu').addClass('text-dark');
+      $('.navbar').addClass('bg-dark');
+      $('.menu-toggle').addClass('text-light');
+      $('.language-menu').addClass('text-light');
     } else {
-      $('.navbar').fadeOut();
-      $('.menu-toggle').removeClass('text-dark');
-      $('.language-menu').removeClass('text-dark');
+      $('.navbar').removeClass('bg-dark');
+      $('.menu-toggle').removeClass('text-light');
+      $('.language-menu').removeClass('text-light');
     }
   });
 

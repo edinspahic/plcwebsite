@@ -3,7 +3,8 @@
 #sidebar-wrapper {
     position: fixed;
     z-index: 2;
-    right: 0;
+    left: 0;
+    top: 58px;
     width: 250px;
     height: 100%;
     -webkit-transition: all 0.4s ease 0s;
@@ -11,7 +12,7 @@
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
-    transform: translateX(250px);
+    transform: translateX(-250px);
     background: rgba(85, 95, 99, 0.7);
     border-left: 1px solid fade-out($white, 0.9);
 }
@@ -23,7 +24,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 100px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-size: 22px;
 }
@@ -68,7 +69,7 @@
 }
 
 #sidebar-wrapper.active {
-    right: 250px;
+    left: 250px;
     width: 250px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
@@ -79,13 +80,13 @@
 
 .menu-toggle {
     position: fixed;
-    right: 4px;
+    left: 4px;
     top: 4px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     color: $white;    
-    line-height: 50px;
+    line-height: 60px;
     z-index: 1040;
 
     &:focus,
@@ -134,12 +135,14 @@
 
 .language-menu {
   position: fixed;
-  right: 60px;
-  top: 17px;
+  right: 30px;
+  top: 4px;
   color: white;
   z-index: 2000;
   list-style: none;
   color: white;
+  height: 60px;
+  line-height: 60px;
 }
 
 .language-menu a {

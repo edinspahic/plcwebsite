@@ -28,7 +28,8 @@ video {
     color: white;
     height: 100vh;
     h1 {
-        font-size: 2.5rem;                
+        font-size: 2.5rem;        
+        font-family: Abel;        
         padding: 0;
         font-weight: 300;    
         
@@ -106,17 +107,6 @@ video {
   }
 }
 
-
-h1, h2, h3 {
-    font-weight: 300;
-}
-
-h2 {
-    font-size: 36px;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
 .heading-border {
     border-bottom: 10px solid rgba(247, 195, 49, 0.7);
     display: block;
@@ -128,7 +118,7 @@ h2 {
     padding-bottom: 0;
 
     .bg-image {
-        background-image: url(../img/snapshot.png);
+        //background-image: url(../img/snapshot.png);
         background-size: cover;
         background-position: center center;
     }
@@ -192,4 +182,10 @@ h2 {
         display: inline-block;
         margin: 0 8px;
     }
+}
+
+
+.navbar-brand {
+    margin-right: auto;
+    margin-left: auto;
 }
