@@ -11,7 +11,9 @@ video {
   transition: ease 3s;
 }
 
-
+.navbar {
+    border-bottom: 1px solid white;
+}
 
 .masthead {
     position: relative;
@@ -27,6 +29,9 @@ video {
     overflow: hidden;
     color: white;
     height: 100vh;
+    
+    background-color: #22222273;
+    
     h1 {
         font-size: 2.5rem;        
         font-family: Abel;        
