@@ -437,23 +437,36 @@
         $(document).ready(function(){
           tns({
               container: '.customer-logos.slider',
-              items: 4,
+              items: 2,
               slideBy: 'page',
               center: true,
               controls: false,
               mouseDrag: true,
-              nav: false
+              nav: false,
+              responsive: {
+                900: {                  
+                  items: 6
+                },         
+                700: {                  
+                  items: 4
+                },
+              }
           })
                              
           
           tns({
               container: '.references.slider',
-              items: 4,
+              items: 2,
               slideBy: 'page',
               center: true,
               controls: false,
               mouseDrag: true,
-              nav: false
+              nav: false,
+              responsive: {
+                700: {                  
+                  items: 4
+                },                
+              }
           })
         });
     </script>    
