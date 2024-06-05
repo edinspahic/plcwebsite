@@ -746,15 +746,15 @@ video {
   color: #343436;
 }
 
-#page-top {
+#page-reference {
   color: white;
 }
 
-#page-top .carousel-inner {
+#page-reference .carousel-inner {
   width: 100%;
 }
 
-#page-top .carousel-control-next, #page-top .carousel-control-prev {
+#page-reference .carousel-control-next, #page-reference .carousel-control-prev {
   top: initial;
   height: 50px;
   width: 50px;
@@ -762,36 +762,36 @@ video {
   background-color: #222;
 }
 
-#page-top .carousel-control-next {
+#page-reference .carousel-control-next {
   right: initial;
   left: 50px;
 }
 
-#page-top .info {
+#page-reference .info {
   padding: 3rem 3rem;
 }
 
-#page-top .info h1 {
+#page-reference .info h1 {
   font-size: 48px;
 }
 
-#page-top .info h3 {
+#page-reference .info h3 {
   margin-top: 5rem;
   font-size: 18px;
 }
 
-#page-top .back {
+#page-reference .back {
   color: inherit;
   font-size: 2rem;
 }
 
-#page-top .modal-body img {
+#page-reference .modal-body img {
   max-width: 100%;
   margin: auto;
   display: block;
 }
 
-#page-top .carousel-item img:hover {
+#page-reference .carousel-item img:hover {
   cursor: pointer;
 }
 

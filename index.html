@@ -41,7 +41,7 @@
     <meta property="og:site_name" content="plancraft d.o.o.">           
 </head>
 
-<body>
+<body id="page-top">
 
     <nav class="navbar fixed-top navbar-dark">
       <div class="container">
@@ -452,7 +452,9 @@
                 },
               }
           })
-                             
+                 
+                 
+          var prevIndex = localStorage.getItem('index')            
           
           var refSlider = tns({
               container: '.references.slider',
@@ -462,6 +464,7 @@
               controls: false,
               mouseDrag: true,
               nav: false,
+              startIndex: prevIndex ? prevIndex - 1 : 0,
               responsive: {
                 700: {                  
                   items: 4
@@ -471,13 +474,7 @@
           
           refSlider.events.on('indexChanged', function (info, eventName) {
               localStorage.setItem('index', info.displayIndex)
-          });
-          
-          var prevIndex = localStorage.getItem('index')
-          
-          if (prevIndex != undefined) {
-              refSlider.goTo(prevIndex - 1)
-          }
+          });                            
 
         });
     </script>    
