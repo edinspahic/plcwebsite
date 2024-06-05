@@ -35,7 +35,8 @@ body {
 }
 
 #customers.content-section {
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .content-section-heading h2 {
