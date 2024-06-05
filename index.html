@@ -22,8 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css?v=2" rel="stylesheet">
@@ -405,8 +406,9 @@
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
     <style>
         .slick-next, .slick-prev {
             transform: initial;
@@ -433,23 +435,26 @@
     </style>
     <script>
         $(document).ready(function(){
-          $('.customer-logos.slider').slick({
-              infinite: true,
-              slidesToShow: 5,
-              autoplay: false,
-              slidesToScroll: 3,
-              centerMode: false,
-              arrows: false
-          });
+          tns({
+              container: '.customer-logos.slider',
+              items: 4,
+              slideBy: 'page',
+              center: true,
+              controls: false,
+              mouseDrag: true,
+              nav: false
+          })
+                             
           
-          $('.references.slider').slick({
-              infinite: true,
-              slidesToShow: 4,
-              autoplay: false,
-              slidesToScroll: 4,
-              centerMode: true,
-              arrows: true
-          });
+          tns({
+              container: '.references.slider',
+              items: 4,
+              slideBy: 'page',
+              center: true,
+              controls: false,
+              mouseDrag: true,
+              nav: false
+          })
         });
     </script>    
 </body>
