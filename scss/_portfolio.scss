@@ -64,13 +64,13 @@
 
 .modal-open .modal {
   padding-right: 0px !important;
-  background-color: rgba(13,33,48,1) !important;
+  background-color: rgba(13,33,48,0.5) !important;
 }
 
 .modal-dialog {
   margin: 0;
   max-width: none;
-  background-color: rgba(13,33,48,1) !important;
+  background-color: rgba(13,33,48,0.5) !important;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -78,11 +78,11 @@
 }
 
 .modal-backdrop {
-  background-color: rgba(13,33,48,1) !important;
+  background-color: rgba(13,33,48,0.5) !important;
 }
 
 .modal-content {    
-  background-color: #0d2130 !important;
+  background-color: rgba(13,33,48,0.5) !important;
   background-clip: initial;
   border: none;
   border-radius: 0;

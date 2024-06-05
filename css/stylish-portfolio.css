@@ -574,7 +574,7 @@ video {
 }
 
 .service-icon {
-  background-color: #fff;
+  background-color: transparent;
   color: black;
   display: block;
   line-height: 7.5rem;
@@ -667,13 +667,13 @@ video {
 
 .modal-open .modal {
   padding-right: 0px !important;
-  background-color: #0d2130 !important;
+  background-color: rgba(13, 33, 48, 0.5) !important;
 }
 
 .modal-dialog {
   margin: 0;
   max-width: none;
-  background-color: #0d2130 !important;
+  background-color: rgba(13, 33, 48, 0.5) !important;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -681,11 +681,11 @@ video {
 }
 
 .modal-backdrop {
-  background-color: #0d2130 !important;
+  background-color: rgba(13, 33, 48, 0.5) !important;
 }
 
 .modal-content {
-  background-color: #0d2130 !important;
+  background-color: rgba(13, 33, 48, 0.5) !important;
   background-clip: initial;
   border: none;
   border-radius: 0;
