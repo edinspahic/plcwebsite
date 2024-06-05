@@ -64,13 +64,13 @@
 
 .modal-open .modal {
   padding-right: 0px !important;
-  background-color: rgba(13,33,48,0.5) !important;
+  background-color: rgba(34,34,34,0.3) !important;
 }
 
 .modal-dialog {
   margin: 0;
   max-width: none;
-  background-color: rgba(13,33,48,0.5) !important;
+  background-color: rgba(34,34,34,0.3) !important;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -78,11 +78,11 @@
 }
 
 .modal-backdrop {
-  background-color: rgba(13,33,48,0.5) !important;
+  background-color: rgba(34,34,34,0.3) !important;
 }
 
 .modal-content {    
-  background-color: rgba(13,33,48,0.5) !important;
+  background-color: rgba(34,34,34,0.3) !important;
   background-clip: initial;
   border: none;
   border-radius: 0;
@@ -147,4 +147,53 @@
     }
 }
 
+
+#page-top {
+    color: white;    
+    
+    .carousel-inner {
+        width: 100%;
+    }
+    
+    .carousel-control-next, .carousel-control-prev { 
+        top: initial;
+        height: 50px;
+        width: 50px;
+        opacity: 0.8;
+        background-color: #222;            
+    }
+    
+    .carousel-control-next {
+        right: initial;
+        left: 50px;
+    }
+    
+    .info {
+        padding: 3rem 3rem;
+    }
+    
+    .info h1 {
+        font-size: 48px;
+    }
+    
+    .info h3 {
+        margin-top: 5rem;
+        font-size: 18px;
+    }
+    
+    .back {
+        color: inherit;
+        font-size: 2rem;
+    }
+    
+    .modal-body img {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+    
+    .carousel-item img:hover {
+        cursor: pointer;
+    }
+}
 

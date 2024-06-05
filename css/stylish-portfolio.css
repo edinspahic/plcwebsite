@@ -667,13 +667,13 @@ video {
 
 .modal-open .modal {
   padding-right: 0px !important;
-  background-color: rgba(13, 33, 48, 0.5) !important;
+  background-color: rgba(34, 34, 34, 0.3) !important;
 }
 
 .modal-dialog {
   margin: 0;
   max-width: none;
-  background-color: rgba(13, 33, 48, 0.5) !important;
+  background-color: rgba(34, 34, 34, 0.3) !important;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -681,11 +681,11 @@ video {
 }
 
 .modal-backdrop {
-  background-color: rgba(13, 33, 48, 0.5) !important;
+  background-color: rgba(34, 34, 34, 0.3) !important;
 }
 
 .modal-content {
-  background-color: rgba(13, 33, 48, 0.5) !important;
+  background-color: rgba(34, 34, 34, 0.3) !important;
   background-clip: initial;
   border: none;
   border-radius: 0;
@@ -746,15 +746,60 @@ video {
   color: #343436;
 }
 
+#page-top {
+  color: white;
+}
+
+#page-top .carousel-inner {
+  width: 100%;
+}
+
+#page-top .carousel-control-next, #page-top .carousel-control-prev {
+  top: initial;
+  height: 50px;
+  width: 50px;
+  opacity: 0.8;
+  background-color: #222;
+}
+
+#page-top .carousel-control-next {
+  right: initial;
+  left: 50px;
+}
+
+#page-top .info {
+  padding: 3rem 3rem;
+}
+
+#page-top .info h1 {
+  font-size: 48px;
+}
+
+#page-top .info h3 {
+  margin-top: 5rem;
+  font-size: 18px;
+}
+
+#page-top .back {
+  color: inherit;
+  font-size: 2rem;
+}
+
+#page-top .modal-body img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+#page-top .carousel-item img:hover {
+  cursor: pointer;
+}
+
 footer.footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: relative;
   background-color: #808f95;
-}
-
-footer.footer h2 {
-  text-transform: uppercase;
 }
 
 footer.footer .address, footer.footer .phone {

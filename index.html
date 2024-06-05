@@ -27,7 +27,7 @@
 
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css?v=2" rel="stylesheet">
+    <link href="css/stylish-portfolio.min.css?v=3" rel="stylesheet">
     
 
     <link rel="icon" type="image/png" href="favicon.png">    
@@ -41,7 +41,7 @@
     <meta property="og:site_name" content="plancraft d.o.o.">           
 </head>
 
-<body id="page-top">
+<body>
 
     <nav class="navbar fixed-top navbar-dark">
       <div class="container">
@@ -222,7 +222,7 @@
         </div>
         <div class="references slider">
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-01.html">
                     <img class="img-fluid" src="img/references/01.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -232,7 +232,7 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-02.html">
                     <img class="img-fluid" src="img/references/02.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -244,7 +244,7 @@
                 </a>
             </div>                
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-03.html">
                     <img class="img-fluid" src="img/references/03.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -256,7 +256,7 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-04.html">
                     <img class="img-fluid" src="img/references/04.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -268,7 +268,7 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-05.html">
                     <img class="img-fluid" src="img/references/05.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -280,7 +280,7 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-06.html">
                     <img class="img-fluid" src="img/references/06.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -292,7 +292,7 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-07.html">
                     <img class="img-fluid" src="img/references/07.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -304,19 +304,19 @@
                 </a>
             </div>
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-08.html">
                     <img class="img-fluid" src="img/references/08.png" alt="">
                     <div class="caption">
                         <div class="caption-content">
                             <h2>
-                                Grünbeck Fabrik, Höchstädt
+                                Büro- und Laborgebäude, München
                             </h2>
                         </div>
                     </div>
                 </a>
             </div>    
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-09.html">
                     <img class="img-fluid" src="img/references/09.png" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -328,7 +328,7 @@
                 </a>
             </div>    
             <div class="slide">
-                <a class="portfolio-item" href="references/project-1.html">
+                <a class="portfolio-item" href="references/project-10.html">
                     <img class="img-fluid" src="img/references/10.jpg" alt="">
                     <div class="caption">
                         <div class="caption-content">
@@ -454,7 +454,7 @@
           })
                              
           
-          tns({
+          var refSlider = tns({
               container: '.references.slider',
               items: 2,
               slideBy: 'page',
@@ -468,6 +468,17 @@
                 },                
               }
           })
+          
+          refSlider.events.on('indexChanged', function (info, eventName) {
+              localStorage.setItem('index', info.displayIndex)
+          });
+          
+          var prevIndex = localStorage.getItem('index')
+          
+          if (prevIndex != undefined) {
+              refSlider.goTo(prevIndex - 1)
+          }
+
         });
     </script>    
 </body>
