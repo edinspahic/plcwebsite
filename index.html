@@ -980,6 +980,29 @@ wanz
         });
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        $(document).ready(function(){
+          tns({
+              container: '.customer-logos.slider',
+              items: 2,
+              slideBy: 'page',
+              center: true,
+              controls: false,
+              mouseDrag: true,
+              nav: false,
+              responsive: {
+                900: {                  
+                  items: 6
+                },         
+                700: {                  
+                  items: 4
+                },
+              }
+          })                                                           
+        });
+    </script>
+
     <script src="https://player.vimeo.com/api/player.js"></script>
 
     <!-- Plugin JavaScript -->
